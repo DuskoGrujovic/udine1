@@ -23,8 +23,13 @@ body {
     user-select: none;
 }
 
+.no-padding {
+    padding: 0px;
+}
+
 .container {
-    max-width: 1500px;
+    width: 1500px;
+    max-width: 100%;
 }
 
 nav {
@@ -35,6 +40,7 @@ nav {
 .navbar-inverse {
 	background: #fff;
 	border-color: #fff;
+	margin-bottom: 0px;
 }
 
 .navbar-brand {
@@ -127,3 +133,68 @@ nav {
 }
 
 /* COMMON END */
+
+/* HOME */
+
+.carousel-caption {
+	right: auto;
+    left: 0%;
+    bottom: 0%;
+    width: 40%;
+    text-align: left;
+    padding: 20px 40px 40px 40px;
+
+	background: #273895;
+	background: -moz-linear-gradient(45deg, #273895 1%, #1462b2 18%, #0090d2 50%);
+	background: -webkit-linear-gradient(45deg, #273895 1%,#1462b2 18%,#0090d2 50%);
+	background: linear-gradient(45deg, #273895 1%,#1462b2 18%,#0090d2 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273895', endColorstr='#0090d2',GradientType=1 );
+}
+
+.carousel-caption p {
+	margin-bottom: 40px;
+}
+
+.carousel-indicators {
+    left: 0%;
+    line-height: 36px;
+    width: 20%;
+    margin-left: 20%;
+}
+
+.carousel-indicators .active,
+.carousel-indicators li {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background: transparent;
+}
+
+.carousel-indicators li {
+	border: none;
+}
+
+.carousel-indicators .active {
+    border: 1px solid rgba(255, 255, 255, 0.40);
+}
+
+.carousel-btn {
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: #fff;
+    background: #0090d2;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.small-dot {
+	width: 5px;
+    height: 5px;
+    margin: auto;
+    margin-top: 12px;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+}
+
+/* HOME END*/
