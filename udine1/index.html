@@ -1,25 +1,64 @@
 <!DOCTYPE html>
-<html lang="it">
+  <html lang="it">
 
-  <head>
+    <head>
     <meta charset="UTF-8">
-    <title>BT #1 - Homepage</title>
+    <title>BT - Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <!-- javascript
-      ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <div class="row">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+            <ul class="nav navbar-nav navbar-right user-nav">
+              <li>
+                <form class="form-search noselect">
+                  <input placeholder="Cerca" type="text" class="input-medium search-query">
+                  <button type="submit" class="btn btn-square btn-theme"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+              </li>
+              <li>
+                <li><a href="#">IT</a></li>
+              </li>
+              <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="row">
+            <ul class="main nav navbar-nav">
+              <li><a href="#">Azienda</a></li>
+              <li><a href="#">Prodotti</a></li>
+              <li><a href="#">Soluzioni</a></li>
+              <li><a href="#">Supporto</a></li>
+              <li><a href="#">Area download</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contatti</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-    <!-- Template Custom JavaScript File -->
     <script src="js/custom.js"></script>
 
   </body>
+
 </html>

@@ -1,8 +1,105 @@
-/* === Custom Font === */
+/* FONTS */
+
 @font-face {
-
     font-family: gotham_narrow_book;
-
     src: local(gotham_narrow_book), url('fonts/gothamnarrow_book.otf') format('opentype');
-
 }
+
+/* FONTS END */
+
+/* COMMON */
+
+.noselect * {
+    outline: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* COMMON END */
+
+/* HEADER */
+.navbar-inverse {
+	background: #fff;
+	border-color: #fff;
+	border-bottom: 1px solid #000;
+}
+
+.navbar-brand {
+	padding: 40px;
+}
+
+.navbar-inverse .navbar-nav li a {
+	color: #0090d2;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	color: #fff;
+	background: #0090d2;
+}
+
+.user-nav {
+	padding: 40px 20px 0 0;
+}
+
+.user-nav li a {
+	padding: 0px;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	border: 1px solid #0090d2;
+	border-radius: 100%;
+}
+
+.user-nav li {
+	margin-left: 20px;
+}
+
+.main.nav {
+	margin: 20px 0 0 10px;
+}
+
+.navbar-inverse .navbar-toggle,
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+	border: none;
+	background: #0090d2;
+}
+
+.form-search .btn {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: transparent;
+	color: #0090d2;
+}
+
+.form-search input {
+    border-radius: 20px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 10px;
+    width: 130px;
+    border: 1px solid #0090d2;
+    color: #0090d2;
+    font-weight: bold;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.form-search input:focus {
+	width: 180px;
+}
+
+::placeholder {
+	color: #0090d2;
+	font-weight: bold;
+}
+
+/* HEADER END */
