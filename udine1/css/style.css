@@ -9,6 +9,10 @@
 
 /* COMMON */
 
+body {
+	background: #e9eaeb;
+}
+
 .noselect * {
     outline: none;
     -webkit-touch-callout: none;
@@ -19,13 +23,18 @@
     user-select: none;
 }
 
-/* COMMON END */
+.container {
+    max-width: 1500px;
+}
 
-/* HEADER */
+nav {
+	margin: auto;
+	max-width: 1500px;
+}
+
 .navbar-inverse {
 	background: #fff;
 	border-color: #fff;
-	border-bottom: 1px solid #000;
 }
 
 .navbar-brand {
@@ -39,6 +48,12 @@
 .navbar-inverse .navbar-nav li a:hover {
 	color: #fff;
 	background: #0090d2;
+}
+
+.has-sub:after {
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f107";
+	margin-left: 5px;
 }
 
 .user-nav {
@@ -57,6 +72,14 @@
 
 .user-nav li {
 	margin-left: 20px;
+}
+
+.user-profile {
+	background: #0090d2;
+}
+
+.user-profile i {
+	color: #fff;	
 }
 
 .main.nav {
@@ -102,4 +125,4 @@
 	font-weight: bold;
 }
 
-/* HEADER END */
+/* COMMON END */
