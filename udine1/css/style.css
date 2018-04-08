@@ -85,41 +85,22 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 	margin-top: 16px;
 }
 
-.parallax_button, .parallax_button_middle {
-	height: 34px;
-	background-color: #0090d2;
-	border: 2px solid #0090d2;
-	border-radius: 30px;
-	display: inline;
-	margin-top: 10px;
-	vertical-align: middle;
-	color: #fff;
-	letter-spacing: 0.5px;
-	font-size: 14px;
+.light-blue {
+	background:#0090d2;
 	font-family: gotham_narrow_bold;
+	border-radius:30px;
+	margin-top: 10px;
+	letter-spacing: 0.5px;
 	box-shadow: 0px 10px 30px 1px rgba(28, 38, 104, 0.3);
 }
 
-.parallax_button {
-	width: 142px;
-}
-
-.parallax_button_middle {
-	width: 120px;
-}
-
-.parallax_button:hover, .parallax_button_middle:hover {
-	height: 34px;
-	border: 2px solid #fff;
-	background-color: #fff;
-	border-radius: 30px;
-	display: inline;
-	margin-top: 10px;
-	vertical-align: middle;
+.light-blue:hover {
+	background:#fff;
 	color: #0090d2;
-	letter-spacing: 0.5px;
-	font-size: 14px;
 	font-family: gotham_narrow_bold;
+	border-radius:30px;
+	margin-top: 10px;
+	letter-spacing: 0.5px;
 	box-shadow: 0px 10px 30px 1px rgba(28, 38, 104, 0.3);
 }
 
