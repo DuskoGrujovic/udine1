@@ -4,3 +4,96 @@
   font-family: gotham_narrow_book;
   src: local(gotham_narrow_book), url('fonts/gothamnarrow_book.otf') format('opentype');
 }
+
+/* === Footer === */
+
+footer {
+  font-family: gotham_narrow_book;
+}
+
+.fheading {
+  color: #44505a;
+  padding: 0;
+  width: 100%;
+}
+
+ul.link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.link-list li {
+  font-weight: bold;
+  list-style: none;
+  margin: 0;
+  padding: 2px 0 2px 0;
+}
+
+footer ul.link-list li a {
+  color: #0090d2;
+}
+
+footer ul.link-list li a:hover {
+  color: #44505a;
+  text-decoration: none;
+}
+
+.sub-footer {
+  background: #fff;
+  color: #44505a;
+  margin: 20px 0 0 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#scroll-top {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  background-color: #0090d2;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  height: 34px;
+  line-height: 36px;
+  position: absolute;
+  right: 30px;
+  text-align: center;
+  top: 30%;
+  width: 34px;
+  z-index: 10;
+}
+
+#scroll-top:hover {
+  -moz-transition: all .6s ease-out;
+  -webkit-transition: all .6s ease-out;
+  background: #44505a;
+  transition: all .6s ease-out;
+}
+
+#scroll-top:hover i {
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
+#scroll-top i {
+  -moz-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  position: relative;
+  top: -2px;
+  transition: all .2s ease-out;
+}
+
+.dot {
+  background-color: #0090d2;
+  border-radius: 50%;
+  display: inline-block;
+  height: 4px;
+  vertical-align: middle;
+  width: 4px;
+}
