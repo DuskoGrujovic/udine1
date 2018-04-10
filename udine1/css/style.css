@@ -1,8 +1,6 @@
 /* === Custom Font === */
+
 @font-face {
-
-    font-family: gotham_narrow_book;
-
-    src: local(gotham_narrow_book), url('fonts/gothamnarrow_book.otf') format('opentype');
-
+  font-family: gotham_narrow_book;
+  src: local(gotham_narrow_book), url('fonts/gothamnarrow_book.otf') format('opentype');
 }

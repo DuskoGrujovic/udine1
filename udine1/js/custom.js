@@ -210,7 +210,7 @@ jQuery(document).ready(function($) {
   Page.init();
 
   //Google Map
-  if( $('#google-map').length ) {
+  if ($('#google-map').length) {
     var get_latitude = $('#google-map').data('latitude');
     var get_longitude = $('#google-map').data('longitude');
 
