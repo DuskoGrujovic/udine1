@@ -14,10 +14,27 @@
 	src: local(GothamNarrow-Bold), url('fonts/GothamNarrow-Bold.otf') format('opentype');
 }
 
+@font-face{
+	font-family: gotham_narrow_xlight;
+	src: local(GothamNarrow-XLight), url('fonts/GothamNarrow-XLight.otf') format('opentype');
+}
+
 /* === General === */
+
+body, html {
+    height: 100%;
+}
 
 body, p {
 	font-family: gotham_narrow_book;
+}
+
+a {
+	color: #0090d2;
+}
+
+a:hover {
+	color: #fff;
 }
 
 h2 {
@@ -34,14 +51,22 @@ h3 {
 	margin-top: 40px;
 }
 
+.margin-top-20 {
+	margin-top: 20px;
+}
+
 .no-margin {
-	margin: 0 !important;
-	padding: 0 !important;
+	margin: 0 ;
+	padding: 0 ;
 }
 
 .margin-negative {
 	margin-left: -18px;
 	margin-right: 5px;
+}
+
+.vertical-center {
+	top: 45%;
 }
 
 input:focus::-webkit-input-placeholder { color:transparent; }
@@ -56,11 +81,12 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     background-image: url("../img/parallax.jpg");
 
     /* Set a specific height */
-    height: 477px;
+    height: 427px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: 50% 0 !important;
+    background-position: 50% 0 ;
+	background-size: cover;
     background-repeat: no-repeat;
 	padding: 0 80px 0 80px;
 }
@@ -91,7 +117,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 	border-radius:30px;
 	margin-top: 10px;
 	letter-spacing: 0.5px;
-	box-shadow: 0px 10px 30px 1px rgba(28, 38, 104, 0.3);
+	box-shadow: 0 10px 30px 1px rgba(28, 38, 104, 0.3);
 }
 
 .light-blue:hover {
@@ -101,7 +127,83 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 	border-radius:30px;
 	margin-top: 10px;
 	letter-spacing: 0.5px;
-	box-shadow: 0px 10px 30px 1px rgba(28, 38, 104, 0.3);
+	box-shadow: 0 10px 30px 1px rgba(28, 38, 104, 0.3);
+}
+
+/* === Tabs === */
+
+.nav-tabs > li > a {
+	font-family: gotham_narrow_bold;
+	color: #0090d2;
+    margin-right: 2px;
+    line-height: 1.0;
+    border-radius: 30px;
+}
+
+.nav-tabs > li > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background: none;
+	font-family: gotham_narrow_bold;
+	color: #0090d2;
+    margin-right: 2px;
+    line-height: 1.0;
+    border: 1px solid #0090d2;
+    border-radius: 30px;
+}
+
+.nav-tabs > li {
+    float:none;
+    display:inline-block;
+}
+
+
+.nav-tabs {
+    border: none;
+	text-align: center;
+}
+
+.tab-pane {
+	color: #0090d2;
+	font-family: gotham_cond_bold;
+	font-size: 40px;
+}
+
+.tab-pane img {
+	padding-right: 10px;
+}
+
+.tabs_input {
+	font-family: gotham_narrow_xlight;
+	letter-spacing: 1.2px;
+	background-color:rgba(0, 0, 0, 0);
+    color:#fff;
+	border: none;
+    border-bottom: 1px solid #fff;
+	padding-bottom: 8px;
+    outline: none;
+    height: 30px;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.tabs_search {
+	margin-top: 10px;
+	border: none;
+	margin-left: -30px;
+}
+
+.tabs {
+	background-image: url("../img/tabs_photo.jpg");
+	background-repeat: no-repeat;
+	background-color: #fff;
+	height: 220px;
+	text-align: justify;
+	padding-top: 90px;
+	font-family: gotham_narrow_xlight;
+	box-sizing: border-box;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+	box-shadow: 0 25px 30px -12px rgba(28, 38, 104, 0.8);
 }
 
 /* === I nostri contatti === */
@@ -109,7 +211,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .contatti {
 	font-family: gotham_narrow_book;
 	box-sizing: border-box;
-	padding: 80px 60px 70px 70px;
+	padding: 10% 10% 15% 25%;
 	font-size: 14px;
 	color: #47545c;
 	line-height: 2.0;
@@ -133,10 +235,8 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 .newsletter_checkbox {
 	margin-right: 5px;
-	margin-top: 8px;
 	display: inline;
 	vertical-align: top;
-	outline: 1px solid #fff;
 }
 
 .newsletter_input, .seleziona_input {
@@ -162,7 +262,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 	color: #0090d2;
 	font-size: 14px;
 	font-weight: bold;
-	box-shadow: 0px 10px 25px 5px #0775b7;
+	box-shadow: 0 10px 25px 5px #0775b7;
 }
 
 .newsletter_button:hover {
@@ -178,7 +278,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 	color: #fff;
 	font-size: 14px;
 	font-weight: bold;
-	box-shadow: 0px 10px 25px 5px #0775b7;
+	box-shadow: 0 10px 25px 5px #0775b7;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -212,6 +312,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 .content {
 	display: inline;
+	margin-left: 10px;
 }
 
 .content a {
@@ -298,7 +399,8 @@ footer ul.link-list li a:hover {
 
 .scroll-top i {
 	position: relative;
-	top: -2px;
+	top: -1px;
+	right: 3px;
 	-webkit-transition: all 0.2s ease-out;
 	-moz-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
@@ -338,4 +440,17 @@ footer ul.link-list li a:hover {
 	.newsletter_checkbox {
 		display: none;
 	}
+	
+	.newsletter_button {
+		float: right;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.parallax {
+        background-attachment: fixed;
+		height: 100%;
+		background-repeat: repeat;
+		background-position: 100%
+    }
 }
