@@ -463,6 +463,10 @@ li.ng-scope.active {
   opacity: 1;
 }
 
+li.ng-scope.active img {
+  box-shadow: 15px 15px 20px #838383;
+}
+
 li.ng-scope {
   opacity: 0.3;
 }
