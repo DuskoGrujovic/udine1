@@ -158,9 +158,49 @@ nav {
 	width: 180px;
 }
 
+.search-icon {
+    margin-top: 3px;
+}
+
+.profile-icon {
+    margin: 9px;
+}
+
 ::placeholder {
 	color: #0090d2;
 	font-weight: bold;
+}
+
+.form-search input:focus::-webkit-input-placeholder {
+   color:transparent;
+   -webkit-transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -ms-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+.form-search input:focus:-moz-placeholder { 
+   color:transparent; 
+   -webkit-transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -ms-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+.form-search input:focus::-moz-placeholder { 
+   color:transparent; 
+   -webkit-transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -ms-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+.form-search input:focus:-ms-input-placeholder {  
+   color:transparent;
+   -webkit-transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   -ms-transition: all 0.4s ease;
+   transition: all 0.4s ease;
 }
 
 /* COMMON END */
@@ -313,19 +353,19 @@ nav {
         margin-top: 2px;
     }
 
-    ::-webkit-input-placeholder {
+    .form-search input::-webkit-input-placeholder {
        color:transparent;
     }
 
-    :-moz-placeholder { /* Firefox 18- */
+    .form-search input:-moz-placeholder { /* Firefox 18- */
        color:transparent; 
     }
 
-    ::-moz-placeholder {  /* Firefox 19+ */
+    .form-search input::-moz-placeholder {  /* Firefox 19+ */
        color:transparent; 
     }
 
-    :-ms-input-placeholder {  
+    .form-search input:-ms-input-placeholder {  
        color:transparent;
     }
 }
