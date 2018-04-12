@@ -2,7 +2,107 @@
 @font-face {
 
     font-family: gotham_narrow_book;
-
     src: local(gotham_narrow_book), url('fonts/gothamnarrow_book.otf') format('opentype');
 
+}
+
+@font-face{
+	font-family: gotham_narrow_bold;
+	src: local(GothamNarrow-Bold), url('fonts/GothamNarrow-Bold.otf') format('opentype');
+}
+
+@font-face{
+	font-family: gotham_cond_bold;
+	src: local(GothamCond-Bold), url('fonts/GothamCond-Bold.otf') format('opentype');
+}
+
+.dot {
+  height: 4px;
+  width: 4px;
+  vertical-align: middle;
+  background-color: #0090d2;
+  border-radius: 50%;
+  display: inline-block;
+}
+#azienda {
+	padding:0;
+}
+.azienda-gray {
+	font-family: gotham_narrow_book;
+	background:#47545c;
+	color:#fff;
+}
+.azienda-gray  h2 {
+	font-family: gotham_cond_bold;
+	background:#47545c;
+	color:#fff;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.azienda-gray h4 {
+	font-family: gotham_narrow_book;
+	background:#47545c;
+	font-size: 22px;
+	color:#fff;
+}
+#azienda button {
+	background:#0090d2;
+	font-family: gotham_narrow_bold;
+	border-radius:30px;
+	margin-top: 10px;
+	letter-spacing: 0.5px;
+	box-shadow: 0px 10px 30px 1px rgba(28, 38, 104, 0.3);
+}
+#azienda button:hover {
+	background:#fff;
+	color: #0090d2;
+	font-family: gotham_narrow_bold;
+	border-radius:30px;
+	margin-top: 10px;
+	letter-spacing: 0.5px;
+	box-shadow: 0px 10px 30px 1px rgba(28, 38, 104, 0.3);
+}
+.text {
+	text-align:left;
+	margin:75px;
+	
+}
+.light-blue {
+	background:#0090d2;
+}
+.light-blue-color {
+	color:#0090d2;
+}
+.count-this {
+	font-family: gotham_cond_bold;
+	font-size: 80px;
+	
+	padding-bottom:0;
+}
+.counting-container {
+	margin:40px 40px 40px 120px;
+}
+
+.counting-box {
+	margin-top:50px;
+}
+.text-counter {
+	font-family: gotham_narrow_book;
+	font-size:20px;
+	padding-left:0;
+	margin:0 0 20px 0px;
+}
+.number-counter{
+	height:80px;
+	margin:-28px 10px 15px -10px;
+}
+.zero {
+	color:rgba(66, 134, 244,0.3);
+	font-family: gotham_cond_bold;
+	font-size: 80px;
+}
+@media only screen and (max-width: 762px) {
+	.counter-text-container{
+		display:none;
+	}
 }
