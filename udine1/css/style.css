@@ -159,7 +159,7 @@ nav {
 }
 
 .search-icon {
-    margin-top: 3px;
+    margin: 3px -1px 0 0;
 }
 
 .profile-icon {
@@ -316,12 +316,13 @@ nav {
     .form-search input {
         width: 34px;
         cursor: pointer;
+        color: transparent;
     }
 
     .form-search input:focus {
         width: 100%;
         padding: 0 20px;
-/*        margin: 20px 0;*/
+        color: #0090d2;
     }
 
     .form-search .btn {
