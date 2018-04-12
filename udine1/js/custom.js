@@ -1,7 +1,8 @@
+
+
 /*global jQuery:false */
 jQuery(document).ready(function($) {
-  "use strict";
-
+  "use strict
 
   (function() {
 
@@ -210,7 +211,7 @@ jQuery(document).ready(function($) {
   Page.init();
 
   //Google Map
-  if( $('#google-map').length ) {
+  if ($('#google-map').length) {
     var get_latitude = $('#google-map').data('latitude');
     var get_longitude = $('#google-map').data('longitude');
 
@@ -231,6 +232,7 @@ jQuery(document).ready(function($) {
   }
 
 });
+
 // Azienda counter 
 $('.count-this').each(function () {
 
@@ -248,7 +250,6 @@ $('.count-this').each(function () {
         }
     });
 });
-
 $(document).ready(function() {
 	
     var numberValue1 = $('#count-1').val();
@@ -286,3 +287,4 @@ $(document).ready(function() {
 	}
 	
 });
+
