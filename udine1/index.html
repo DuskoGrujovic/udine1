@@ -11,6 +11,7 @@
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/counter-style.css">
   </head>
 
   <body ng-controller="CarouselAngCtrl">
@@ -98,14 +99,72 @@
 
     <!-- Slider END -->
 
+    <!-- Aziende Block -->
+
+    <div id="azienda" class="col-md-12 col-xs-12 container-fluid">
+    
+    <div id="container" class="">
+      <div class="azienda-gray col-md-6 col-sm-6 col-xs-12">
+        <div class="text">
+          <p class="subtitle">Azienda <span class="dot"></span></p>
+          <h2>LOREM IPSUM DOLAR AMET NUMQUAM IN TEMPORE</h2>
+          <p>It is a long established fact that a reader will
+             be distracted by the readable content of a page when looking at its layout.
+             The point of using Lorem Ipsum is that it has a more-or-less normal distribution,
+          </p>
+        <a href="#" class="carousel-btn continua-top"> Continua </button></a>
+        </div>
+      </div>
+      <div class="counter-text-container col-md-6 col-sm-6">
+        <div class="counting-container light-blue-color col-md-9 col-lg-10 align-self-center">
+          <div class="counting-box" id="count-container-1">
+            <input type="hidden" id="count-1" value="30">
+            <div class="col-md-3 image-counter"><img src="img/picture-azienda.jpg" alt="azienda"></div>
+            <div class="col-md-4 number-counter"><span class="zero"></span><span class="count-this">30</div>
+            <div class="col-md-4 text-counter"><p> Lorem ipsum dolar</p></div>
+          </div>
+          <div class="counting-box" id="count-container-2">
+            <input type="hidden" id="count-2" value="3">
+            <div class="col-md-3 image-counter"><img src="img/picture-azienda.jpg" alt="azienda"></div>
+            <div class="col-md-4 number-counter"><span class="zero"></span><span class="count-this">3</div>
+            <div class="col-md-4 text-counter"><p> Lorem ipsum dolar</p></div>
+          </div>
+          <div class="counting-box " id="count-container-3">
+            <input type="hidden" id="count-3" value="8">
+            <div class="col-md-3 image-counter"><img src="img/picture-azienda.jpg" alt="azienda"></div>
+            <div class="col-md-4 number-counter"><span class="zero"></span><span class="count-this">8</div>
+            <div class="col-md-4 text-counter"><p> Lorem ipsum dolar</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Aziende Block END-->
+
     <!-- Carousel Ang -->
      <div class="container">
        <div class="row">
-      <div class="col-sm-5 no-padding">dfsdfsdf
+      <div class="col-sm-5 no-padding">
+        <div class="leftCarousel-background">
+        <div class="leftCarousel-content padding-top75">
+          <div class="text-carousleLeft">
+            <p class="subtitle">News & eventi <span class="dot"></span></p>
+            <h2>LOREM IPSUM DOLAR AMET NUMQUAM IN TEMPORE</h2>
+            <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp; &nbsp;Evento &nbsp; / &nbsp; 2-3-4 MAR </p>
+            <p>It is a long established fact that a reader will
+               be distracted by the readable content of a page when looking at its layout.
+            </p>
+          <div class="next-btt">
+          <a href="#" class="carousel-btn rightIco"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </div>
+          </div>       
+        </div>
+        </div>
       </div>
       <div class="col-sm-7 no-padding right-slider">
-        <div class="carousel-demo">
-        <ul  rn-carousel rn-carousel-index="carouselIndex2" rn-carousel-auto-slide rn-carousel-pause-on-hover rn-carousel-transition="fade" class="carousel2">
+        <div class="carousel-demo padding-top75">
+        <ul  rn-carousel rn-carousel-index="carouselIndex2" rn-carousel-auto-slide rn-carousel-pause-on-hover rn-carousel-transition="slide" class="carousel2">
             <li ng-repeat="slide in slides track by slide.id" ng-class={'active':slide.id-carouselIndex2==1}>
                 <div class="bgimage">
                   <img style="width:285px;" class="slide" ng-src={{slide.img}} />
@@ -120,6 +179,9 @@
 
         </div>
         <div rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="carouselIndex2"></div>
+        <div class="tutte-le-news">
+           <a href="#" class="carousel-btn">Tutte le news</a>
+        </div>
       </div>
       </div>
         </div>

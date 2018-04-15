@@ -5,6 +5,16 @@
   src: local(gotham_narrow_book), url('fonts/gothamnarrow_book.otf') format('opentype');
 }
 
+@font-face{
+  font-family: gotham_narrow_bold;
+  src: local(GothamNarrow-Bold), url('fonts/GothamNarrow-Bold.otf') format('opentype');
+}
+
+@font-face{
+  font-family: gotham_cond_bold;
+  src: local(GothamCond-Bold), url('fonts/GothamCond-Bold.otf') format('opentype');
+}
+
 /* FONTS END */
 
 /* COMMON */
@@ -349,12 +359,150 @@ nav {
 
 /* MOBILE END */
 
+/* AZIENDA BLOCK */
+
+
+.dot {
+  height: 4px;
+  width: 4px;
+  vertical-align: middle;
+  background-color: #0090d2;
+  border-radius: 50%;
+  display: inline-block;
+}
+#azienda {
+  padding:0;
+}
+.azienda-gray {
+  font-family: gotham_narrow_book;
+  background:#47545c;
+  color:#fff;
+}
+.azienda-gray  h2 {
+  font-family: gotham_cond_bold;
+  background:#47545c;
+  color:#fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.azienda-gray h4 {
+  font-family: gotham_narrow_book;
+  background:#47545c;
+  font-size: 22px;
+  color:#fff;
+}
+#azienda button {
+  background:#0090d2;
+  font-family: gotham_narrow_bold;
+  border-radius:30px;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 10px 30px 1px rgba(28, 38, 104, 0.3);
+}
+#azienda button:hover {
+  background:#fff;
+  color: #0090d2;
+  font-family: gotham_narrow_bold;
+  border-radius:30px;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 10px 30px 1px rgba(28, 38, 104, 0.3);
+}
+.text {
+  text-align:left;
+  margin:75px;
+  
+}
+.light-blue {
+  background:#0090d2;
+}
+.light-blue-color {
+  color:#0090d2;
+}
+.count-this {
+  font-family: gotham_cond_bold;
+  font-size: 80px;
+  padding-bottom:0;
+}
+.counting-container {
+  margin:40px 40px 40px 30px;
+}
+
+.counting-box {
+  margin-top:50px;
+}
+.text-counter {
+  font-family: gotham_narrow_book;
+  font-size:20px;
+  padding-left:0;
+  margin:0px 0px 20px -20px;
+}
+.number-counter{
+  height:80px;
+  margin:-28px 10px 20px -40px;
+}
+.zero {
+  color:rgba(66, 134, 244,0.3);
+  font-family: gotham_cond_bold;
+  font-size: 80px;
+}
+@media only screen and (max-width: 767px) {
+  .counter-text-container{
+    display:none;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .counting-container {
+    margin:0px 20px 20px 25%;
+  }
+  .counting-box {
+    margin-top:10px;
+  }
+  .text-counter {
+    margin:-5px 0 5px 0px;
+  }
+  .number-counter {
+    margin:-20px 15px 0px 10px;
+  }
+  .count-this {
+    font-size:70px;
+  }
+  .image-counter {
+    
+    margin:-5px 15px 0px 30px;
+  }
+  .zero {
+    font-size:70px
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .text-counter {
+    margin:-3px 0 20px 15px;
+  }
+  .number-counter {
+    margin:-26px 15px 15px -15px;
+  }
+  .counting-container {
+    margin:30px 30px 30px 20%;
+  }
+}
+
+.continua-top {
+  margin-top: 20px;
+  display: block;
+  width: 90px;
+  padding-left: 16px;
+}
+
+/* AZIENDA BLOCK END */
+
+
 /* CAROUSEL ANGULAR */
 
 ul[rn-carousel] {
   height: 200px;
   margin: 0 auto;
-  width: 355px;
+  width: 345px;
 }
 
 .carousel-demo {
@@ -411,12 +559,23 @@ ul[rn-carousel-transition="hexagon"] {
 /* indicators */
 
 div.rn-carousel-indicator span {
-  color: #666;
+  color: #0090d2;
   cursor: pointer;
+  font-size: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 11px;
+  padding-right: 11px;
 }
 
 div.rn-carousel-indicator span.active {
-  color: white;
+  border: 1px solid #0090d2;
+  margin-bottom: 2px;
+  background: transparent;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  
 }
 
 /* prev/next controls */
@@ -453,6 +612,8 @@ div.rn-carousel-indicator span.active {
 
 .right-slider {
   overflow: hidden;
+  padding-left: 15px;
+  height: 430px;
 }
 
 .bgimage {
@@ -464,7 +625,7 @@ li.ng-scope.active {
 }
 
 li.ng-scope.active img {
-  box-shadow: 15px 15px 20px #838383;
+  box-shadow: 15px 10px 15px #212121b3;
 }
 
 li.ng-scope {
@@ -474,3 +635,83 @@ li.ng-scope {
 .ng-scope.ng-isolate-scope {
   text-align: center;
 }
+
+.leftCarousel-background {
+  background: #273895;
+  background: -moz-linear-gradient(45deg, #273895 1%, #1462b2 18%, #0090d2 50%);
+  background: -webkit-linear-gradient(45deg, #273895 1%, #1462b2 18%, #0090d2 50%);
+  background: linear-gradient(45deg, #273895 1%, #1462b2 18%, #0090d2 50%);
+  bottom: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273895', endColorstr='#0090d2', GradientType=1);
+  width: 120%;
+  height: 430px;
+
+}
+
+.text-carousleLeft {
+  padding-left: 100px;
+  padding-right: 160px;
+}
+
+.padding-top75 {
+  padding-top: 75px;
+}
+
+.text-carousleLeft {
+  font-family: gotham_narrow_book;
+  color:#fff;
+  }
+
+  .leftCarousel-content h2 {
+    font-family: gotham_cond_bold;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .text-carousleLeft ::placeholder {
+  color: #fff;
+  font-weight: bold;
+}
+
+.text-carousleLeft .dot {
+    height: 4px;
+    width: 4px;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.subtitle {
+  font-size: 18px;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.rightIco i {
+  margin-top: 40px;
+  display: inline-block;
+  width: 9px;
+}
+
+.rightIco {
+  padding: 10px 13px;
+}
+
+.tutte-le-news {
+  width: 125px;
+  float: right;
+  position: absolute;
+  right: 35px;
+  margin-top: 30px;
+}
+
+.rn-carousel-indicator {
+  margin-top: 30px;
+  width: 490px;
+  float: right;
+}
+
