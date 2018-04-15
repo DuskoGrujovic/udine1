@@ -8,7 +8,7 @@ body{
 }
 
 .counting-container{
-	display: flex;
+	display:flex;
 }
 .counting-box{
 	border: 1px solid #D1C2BA;

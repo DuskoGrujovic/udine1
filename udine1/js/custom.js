@@ -15,7 +15,6 @@ $('.count-this').each(function () {
         }
     });
 });
-
 $(document).ready(function() {
 	
     var numberValue1 = $('#count-1').val();
@@ -53,3 +52,4 @@ $(document).ready(function() {
 	}
 	
 });
+
