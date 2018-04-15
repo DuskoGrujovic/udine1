@@ -1,9 +1,7 @@
 /* === Custom Font === */
 @font-face {
-
     font-family: gotham_narrow_book;
     src: local(gotham_narrow_book), url('fonts/gothamnarrow_book.otf') format('opentype');
-
 }
 
 @font-face{
@@ -16,56 +14,51 @@
 	src: local(GothamCond-Bold), url('fonts/GothamCond-Bold.otf') format('opentype');
 }
 
-.dot {
-  height: 4px;
-  width: 4px;
-  vertical-align: middle;
-  background-color: #0090d2;
-  border-radius: 50%;
-  display: inline-block;
-}
-#azienda {
+.azienda {
 	padding:0;
 }
 .azienda-gray {
-	font-family: gotham_narrow_book;
 	background:#47545c;
 	color:#fff;
+	font-family: gotham_narrow_book;
 }
-.azienda-gray  h2 {
-	font-family: gotham_cond_bold;
+.azienda-gray-h2 {
 	background:#47545c;
 	color:#fff;
 	font-size: 40px;
+	font-family: gotham_cond_bold;
 	margin-bottom: 20px;
 }
-.azienda-gray h4 {
-	font-family: gotham_narrow_book;
-	background:#47545c;
-	font-size: 22px;
-	color:#fff;
-}
-#azienda button {
+
+.azienda button {
 	background:#0090d2;
-	font-family: gotham_narrow_bold;
+	box-shadow: 0 10px 30px 1px rgba(28, 38, 104, 0.3);
 	border-radius:30px;
-	margin-top: 10px;
+	font-family: gotham_narrow_bold;
 	letter-spacing: 0.5px;
-	box-shadow: 0px 10px 30px 1px rgba(28, 38, 104, 0.3);
+	margin-top: 10px;	
 }
-#azienda button:hover {
+.azienda button:hover {
 	background:#fff;
+	border-radius:30px;
+	box-shadow: 0 10px 30px 1px rgba(28, 38, 104);
+	box-shadow: 0 10px 30px 1px rgba(28, 38, 104, 0.3);
 	color: #0090d2;
 	font-family: gotham_narrow_bold;
-	border-radius:30px;
-	margin-top: 10px;
 	letter-spacing: 0.5px;
-	box-shadow: 0px 10px 30px 1px rgba(28, 38, 104, 0.3);
+	margin-top: 10px;
+}
+.dot {
+  background-color: #0090d2;
+  border-radius: 50%;
+  display: inline-block;
+  height: 4px;
+  vertical-align: middle;
+  width: 4px;
 }
 .text {
-	text-align:left;
 	margin:75px;
-	
+	text-align:left;
 }
 .light-blue {
 	background:#0090d2;
@@ -80,6 +73,7 @@
 }
 .counting-container {
 	margin:40px 40px 40px 30%;
+	
 }
 
 .counting-box {
@@ -88,14 +82,15 @@
 .text-counter {
 	font-family: gotham_narrow_book;
 	font-size:20px;
+	margin:0 0 20px -20px;
 	padding-left:0;
-	margin:0px 0px 20px -20px;
 }
 .number-counter{
 	height:80px;
 	margin:-28px 10px 20px -40px;
 }
 .zero {
+	color:rgb(215, 224, 239);
 	color:rgba(66, 134, 244,0.3);
 	font-family: gotham_cond_bold;
 	font-size: 80px;
@@ -106,37 +101,39 @@
 	}
 }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
-	.counting-container {
-		margin:0px 20px 20px 25%;
-	}
+
 	.counting-box {
 		margin-top:10px;
 	}
-	.text-counter {
-		margin:-5px 0 5px 0px;
-	}
-	.number-counter {
-		margin:-20px 15px 0px 10px;
+	.counting-container {
+		margin:0 20px 20px 25%;
 	}
 	.count-this {
 		font-size:70px;
 	}
 	.image-counter {
 		
-		margin:-5px 15px 0px 30px;
+		margin:-5px 15px 0 30px;
+	}
+	.number-counter {
+		margin:-20px 15px 0 10px;
+	}
+	.text-counter {
+		margin:-5px 0 5px 0;
 	}
 	.zero {
 		font-size:70px
 	}
 }
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
-	.text-counter {
-		margin:-3px 0 20px 15px;
+
+	.counting-container {
+		margin:30px 30px 30px 20%;
 	}
 	.number-counter {
 		margin:-26px 15px 15px -15px;
 	}
-	.counting-container {
-		margin:30px 30px 30px 20%;
+	.text-counter {
+		margin:-3px 0 20px 15px;
 	}
 }
