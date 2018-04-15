@@ -73,8 +73,7 @@
 	padding-bottom:0;
 }
 .counting-container {
-	margin:40px 40px 40px 30%;
-	
+	margin:40px 40px 40px 26%;
 }
 
 .counting-box {
@@ -85,6 +84,7 @@
 	font-size:20px;
 	margin:0 0 20px -20px;
 	padding-left:0;
+	height:80px;
 }
 .number-counter{
 	height:80px;
@@ -125,6 +125,7 @@
 	.zero {
 		font-size:70px
 	}
+	
 }
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
 
