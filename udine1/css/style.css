@@ -51,6 +51,7 @@ a:hover {
 h2 {
 	font-size: 40px;
 	margin-bottom: 20px;
+	font-family: gotham_cond_bold;
 }
 
 h3 {
@@ -626,10 +627,11 @@ nav {
 }
 .text-counter {
 	font-family: gotham_narrow_book;
-	font-size:20px;
-	margin:0 0 20px -20px;
-	padding-left:0;
-	height:80px;
+	font-size: 22px;
+	margin: 0 0 20px 0;
+	padding-left: 0;
+	height: 80px;
+	letter-spacing: 1.2px;
 }
 .number-counter{
   height: 80px;
@@ -653,7 +655,7 @@ nav {
 		margin-top:10px;
 	}
 	.counting-container {
-		margin:0 20px 20px 25%;
+		margin:0 20px 20px 16%;
 	}
 	.count-this {
 		font-size:70px;
