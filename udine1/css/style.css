@@ -58,6 +58,10 @@ h3 {
 	margin-bottom: 20px;
 }
 
+.margin-top-120 {
+	margin-top: 120px;
+}
+
 .margin-top-80 {
 	margin-top: 80px;
 }
@@ -418,6 +422,16 @@ nav {
     background: #0090d2;
     text-shadow: none;
     font-weight: bold;
+}
+
+.carousel-btn:hover {
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: #fff;
+    background: #47545c;
+    text-shadow: none;
+    font-weight: bold;
+	text-decoration: none;
 }
 
 .small-dot {
@@ -826,7 +840,7 @@ li.ng-scope {
   bottom: 0;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273895', endColorstr='#0090d2', GradientType=1);
   width: 120%;
-  height: 430px;
+  height: 460px;
 
 }
 
@@ -866,7 +880,7 @@ li.ng-scope {
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .date {
@@ -880,7 +894,7 @@ li.ng-scope {
 }
 
 .rightIco {
-  padding: 10px 13px;
+  padding: 10px 15px;
 }
 
 .tutte-le-news {
@@ -977,7 +991,7 @@ li.ng-scope {
 .icons p {
 	color: #44505a;
 	padding-bottom: 15px;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .icons-svg > svg {
@@ -985,10 +999,10 @@ li.ng-scope {
 }
 
 .icons-svg {
-  padding: 10px;
-  border: 1px solid #0090d2;
+  padding: 20px;
+  border: solid 1px rgba(0,144,210,0.5);
   border-radius: 50%;
-  width: 140px;
+  width: 110px;
   margin-left: auto;
   margin-right: auto;
 }
