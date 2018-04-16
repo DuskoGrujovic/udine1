@@ -120,6 +120,10 @@ nav {
 	max-width: 1500px;
 }
 
+.nav > li {
+	margin-right: 15px;
+}
+
 .navbar-inverse {
 	background: #fff;
 	border-color: #fff;
@@ -144,6 +148,10 @@ nav {
 
 .main.nav li a {
     padding: 10px;
+}
+
+.main.nav.navbar-nav li a:hover {
+	text-decoration: line-through;
 }
 
 .navbar-inverse .navbar-nav li a:focus,
@@ -272,9 +280,9 @@ nav {
 }
 
 .main.nav {
+	font-family: gotham_narrow_bold;
 	margin: 20px 0 0 0;
     text-align: center;
-    font-weight: bold;
 }
 
 .navbar-inverse .navbar-toggle,
@@ -476,6 +484,10 @@ nav {
     .lang-selector-menu {
         display: none !important;
     }
+	
+	.lang-selector  a:hover {
+		text-decoration: none;
+	}
 
     .carousel-caption {
         position: relative;
