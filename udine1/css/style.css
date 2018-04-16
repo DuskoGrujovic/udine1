@@ -75,6 +75,56 @@ nav {
     width: 20px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1500px;
+    width: 100%;
+    z-index: 10;
+}
+
+.sticky .navbar-brand img {
+    max-width: 150px;
+}
+
+.sticky .form-search input {
+    width: 34px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.sticky .form-search input:focus {
+    color: #0090d2;
+}
+
+.sticky .form-search .btn {
+    pointer-events: none;
+    right: -3px;
+    bottom: 0;
+}
+
+.sticky .search-active .btn {
+    pointer-events: initial;
+}
+
+.sticky .form-search input::-webkit-input-placeholder {
+   color:transparent;
+}
+
+.sticky .form-search input:-moz-placeholder { /* Firefox 18- */
+   color:transparent; 
+}
+
+.sticky .form-search input::-moz-placeholder {  /* Firefox 19+ */
+   color:transparent; 
+}
+
+.sticky .form-search input:-ms-input-placeholder {  
+   color:transparent;
+}
+
 .has-sub:after {
 	font: normal normal normal 14px/1 FontAwesome;
 	content: "\f107";
