@@ -18,7 +18,7 @@
 
   <!-- Navigation -->
 
-  <nav id="navbar" class="navbar navbar-inverse">
+  <nav id="navbar" class="navbar navbar-inverse megamenu">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -55,7 +55,85 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="main nav navbar-nav">
           <li><a href="#">Azienda</a></li>
-          <li><a href="#" class="has-sub">Prodotti</a></li>
+          <li class="dropdown megamenu-fw"><a href="#" class="has-sub">Prodotti</a>
+            <ul class="dropdown-menu megamenu-content" role="menu">
+              <li>
+                <div class="row">
+                  <div class="col-sm-4 mega-col1">
+                    <span class="megamenu-title">Prodotti</span>
+                    <ul class="media-list">
+                      <li class="product1">
+                        <a href="#"><img src="img/menu/product1.png"><span>LOREM IPSUM</span></a>
+                      </li>
+                      <li class="product2">
+                        <a href="#"><img src="img/menu/product2.png"><span>LOREM IPSUM DOLOR</span></a>
+                      </li>
+                      <li class="product3">
+                        <a href="#"><img src="img/menu/product3.png"><span>NUMQUAM</span></a>
+                      </li>
+                      <li class="product4">
+                        <a href="#"><img src="img/menu/product4.png"><span>IN EO TEMPORE</span></a>
+                      </li>
+                      <li class="product5">
+                        <a href="#"><img src="img/menu/product5.png"><span>LOREM IPSUM</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 mega-col2">
+                    <ul class="media-list megamenu-second">
+                      <li class="product1">
+                        <a href="#"><img src="img/menu/product1.png"><span>LOREM IPSUM</span></a>
+                      </li>
+                      <li class="product2">
+                        <a href="#"><img src="img/menu/product2.png"><span>LOREM IPSUM DOLOR</span></a>
+                      </li>
+                      <li class="product3">
+                        <a href="#"><img src="img/menu/product3.png"><span>NUMQUAM</span></a>
+                      </li>
+                      <li class="product4">
+                        <a href="#"><img src="img/menu/product4.png"><span>IN EO TEMPORE</span></a>
+                      </li>
+                      <li class="product5">
+                        <a href="#"><img src="img/menu/product5.png"><span>LOREM IPSUM</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 mega-col3">
+                    <span class="megamenu-title">In evidenza</span>
+                    <ol class="carousel-indicators">
+                      <li data-target="#productCarousel" data-slide-to="0" class="">
+                        <div class="small-dot"></div>
+                      </li>
+                      <li data-target="#productCarousel" data-slide-to="1" class="">
+                        <div class="small-dot"></div>
+                      </li>
+                      <li data-target="#productCarousel" data-slide-to="2" class="active">
+                        <div class="small-dot"></div>
+                      </li>
+                    </ol>
+                    <div id="productCarousel" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item">
+                          <img src="img/menu/megamenu-slider.jpg" alt="Slider">
+                        </div>
+                        <div class="item">
+                          <img src="img/menu/megamenu-slider.jpg" alt="Slider">
+                        </div>
+                        <div class="item active">
+                          <img src="img/menu/megamenu-slider.jpg" alt="Slider">
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Lorum ipsum dolor</h3>
+                    <span class="small-info">[ Lorem ipsum / Lorem ipsum dolor ]</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nulla sed risus quis ipsum
+                    pellentesque auctor sed ut diam</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
           <li><a href="#">Soluzioni</a></li>
           <li><a href="#">Supporto</a></li>
           <li><a href="#">Area download</a></li>

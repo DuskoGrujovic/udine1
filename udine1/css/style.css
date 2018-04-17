@@ -184,6 +184,127 @@ nav {
   width: 20px;
 }
 
+.megamenu .nav,
+.megamenu .collapse,
+.megamenu .dropup,
+.megamenu .dropdown {
+  position: static;
+}
+
+.megamenu .container {
+  position: relative;
+}
+
+.megamenu .dropdown-menu {
+  left: auto;
+}
+
+.megamenu .megamenu-content {
+  padding: 15px;
+  padding-top: 80px;
+}
+
+.megamenu .dropdown.megamenu-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+
+.megamenu .media-list li {
+  font-size: 36px;
+  margin-bottom: 10px;  
+  font-family: gotham_cond_bold;
+}
+
+.megamenu .media-list li a img {
+  border-radius: 100%;
+  background: #f5f5f5;
+  margin-right: 20px;
+  border: 1px solid transparent;
+}
+
+.megamenu .media-list li a:hover img {
+  border: 1px solid;
+  background: #fff;
+}
+
+.megamenu-second {
+  margin-top: 70px;
+}
+
+.megamenu-title {
+  font-size: 20px;
+  display: block;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  font-family: gotham_narrow_book;
+}
+
+
+.mega-col1 {
+  width: 30%;
+  margin-left: 10%;
+}
+
+.mega-col2 {
+  width: 30%;
+}
+
+.mega-col3 {
+  width: 20%;
+  margin-right: 10%;
+  max-width: 300px;
+}
+
+.mega-col3 .megamenu-title {
+  padding-left: 0px;
+  float: left;
+}
+
+.megamenu .carousel-indicators {
+  width: auto;
+  float: right;
+  padding-left: initial;
+  right: 0;
+  position: relative;
+  padding-top: 20px;
+  padding-right: 0px;
+}
+
+.megamenu .carousel-indicators .active {
+  border: 1px solid #0090d2;
+}
+
+.megamenu .small-dot {
+  background: #0090d2;
+}
+
+.megamenu .carousel-inner>.item>a>img,
+.megamenu .carousel-inner>.item>img,
+.megamenu .img-responsive,
+.megamenu .thumbnail a>img, .thumbnail>img {
+  max-width: 300px;
+  height: 220px;
+}
+
+.megamenu h3 {
+  font-size: 24px;
+  color: #0090d2;
+  margin-bottom: 0px;
+  font-family: gotham_narrow_book;
+}
+
+.megamenu .small-info {
+  font-size: 11px;
+  font-family: gotham_narrow_book;
+  margin: 10px 0;
+  display: block;
+}
+
+.megamenu p {
+  font-size: 16px;
+  font-family: gotham_narrow_book;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -1435,6 +1556,10 @@ footer ul.link-list li a:hover {
 
   .counter-text-container {
     display: none;
+  }
+
+  .megamenu .media-list li {
+    font-size: 20px;
   }
 }
 
