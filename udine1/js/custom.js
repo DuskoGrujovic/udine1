@@ -5,7 +5,7 @@ $(document).ready(function() {
         },
         function() { $('.dropdown-menu', this).fadeOut("fast");
     });
-    
+
     $('.search-query').blur(function() {
         $(this).closest('.form-search').removeClass('search-active');
       })
@@ -93,8 +93,7 @@ $(document).ready(function() {
 
 // Aziende Block END
 
-
-//Angular Carousel
+// Angular Carousel
 
 angular.module('BtApp', [
             'angular-carousel'
