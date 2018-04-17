@@ -743,6 +743,13 @@ nav {
   font-size: 80px;
 }
 
+.bgimage img {
+  max-width: 285px;
+}
+.leftCarousel-content-mobile, .mobile-indicators {
+  display: none;
+}
+
 ul[rn-carousel] {
   height: 200px;
   margin: 0 auto;
@@ -1536,6 +1543,105 @@ footer ul.link-list li a:hover {
   .lost {
     visibility: hidden;
   }
+
+  .right-slider {
+    height: 19em;
+}
+
+  .angular-slider {
+    background: #273895;
+    background: -moz-linear-gradient(45deg, #273895 1%, #1462b2 18%, #0090d2 50%);
+    background: -webkit-linear-gradient(45deg, #273895 1%, #1462b2 18%, #0090d2 50%);
+    background: linear-gradient(45deg, #273895 1%, #1462b2 18%, #0090d2 50%);
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273895', endColorstr='#0090d2', GradientType=1);
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .padding-top75 {
+    padding-top: initial;
+  }
+
+  .carousel-news {
+    display: block;
+  }
+
+
+  .bgimage img {
+    max-width: 320px;
+  }
+
+  .bgimage {
+    width: 96%;
+  }
+
+  ul[rn-carousel] {
+      height: auto;
+      width: 100%;
+    }
+  .tutte-le-news {
+    display: none;
+  }
+  .rn-carousel-indicator {
+    width: 100%;
+    position: absolute;
+    right: 10px;
+  }
+  .ng-scope.ng-isolate-scope {
+    text-align: right;
+  }
+  .leftCarousel-background {
+    width: 100%;
+  }
+
+  .leftCarousel-content h2, .leftCarousel-content .next-btt, .leftCarousel-content p  {
+    display: none;
+  }
+
+  .leftCarousel-content-mobile {
+    display: block;
+    font-family: gotham_narrow_book;
+    color: #fff;
+    padding-left: 20px;
+  }
+
+  .leftCarousel-content p.date, .leftCarousel-content p.subtitle {
+    display: block;
+    text-transform: uppercase;
+  }
+
+  .text-carousleLeft {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+
+  .leftCarousel-background {
+    height: 65px;
+    background: none;
+  }
+
+  .desktop-indicator {
+    display: none;
+  }
+
+  .mobile-indicators  {
+    display: block;
+  }
+
+  .mobile-indicators .rn-carousel-indicator {
+    margin-top: 5px;
+  }
+
+  div.rn-carousel-indicator span{
+    color: #ffffff;
+  }
+
+  div.rn-carousel-indicator span.active {
+    border: 1px solid #ffffff;
+  }
+
+
 }
 
 @media screen and (max-width: 992px) {
